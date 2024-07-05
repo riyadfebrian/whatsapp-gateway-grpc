@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package whatsapp;
+
+
+service WhatsAppService {
+    rpc SendMessages (PayloadMessageRequest) returns (PayloadResponse);
+    rpc sendMessagesWithAttachments (PayloadAttachmentsRequest) returns (PayloadResponse);
+}
+
+
+message PayloadMessageRequest {
+    string phone_number = 1;
+    string message = 2;
+}
+
+
+message PayloadResponse {
+    string message = 1;
+}
+
+message PayloadAttachmentsRequest {
+    string phone_number = 1;
+    string message = 2;
+    string attachment = 3;
+}
