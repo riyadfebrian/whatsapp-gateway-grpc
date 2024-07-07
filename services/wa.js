@@ -29,7 +29,7 @@ class WhatsappClient {
                     headless: true,
                     args: ['--no-sandbox'],
                     timeout: 1200000,
-                    // executablePath: '/path/to/Chrome',
+                    // executablePath: '/opt/chrome/chrome-linux64/chrome',
                 }
             });
 

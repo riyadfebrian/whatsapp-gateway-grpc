@@ -168,3 +168,6 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# Docker
+docker-compose.yaml
